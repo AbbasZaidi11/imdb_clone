@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   AppBar,
   Toolbar,
@@ -18,6 +18,7 @@ const StyledToolBar = styled(Toolbar)`
   background-color: #121212;
   min-height: 56px !important;
   padding: 0 115px !important;
+  margin: 0 0px !important;
   justify-content: space-between;
   & > * {
     padding-left: 16px;
@@ -58,7 +59,7 @@ function Header() {
   };
 
   return (
-    <AppBar>
+    <AppBar position="static">
       <StyledToolBar>
         <Logo src={logoURL} alt="logo" />
         <Box onClick={handleClick}>
