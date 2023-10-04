@@ -6,6 +6,7 @@ import { NOWPLAYING_API_URL } from "../constants/constant";
 import { Box } from "@mui/material";
 import Banner from "../Components/Banner";
 import UpNext from "../Components/UpNext";
+import Slide from '../Components/Slide';
 import styled from "@emotion/styled";
 const Wrapper = styled(Box)`
   padding: 20px 0;
@@ -31,6 +32,13 @@ function Home() {
           <Banner movies={movies} />
           <UpNext movies={movies} />
         </Wrapper>
+        <Slide movies={movies}/>
+        <Slide movies={movies}/>
+        <Slide movies={movies}/>
+        <Slide movies={movies}/>
+        <Slide movies={movies}/>
+        <Slide movies={movies}/>
+
       </Component>
     </>
   );
